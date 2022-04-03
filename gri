@@ -1,5 +1,5 @@
 #!/bin/bash
-if  -d "$HOME/.config/gri" ; then
+if [ -d "$HOME/.config/gri" ]; then # ]
   source "$HOME/.config/gri/gri.conf"
 else
   mkdir -p "$HOME/.config/gri"

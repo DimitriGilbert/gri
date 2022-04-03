@@ -1,7 +1,7 @@
 # GRI : Git(hub) Release Installer
 
 Download, extract and make executable binaries downloaded from a git(hub) release.
-It is only tested on github with a few repos but works well in those cases as this tool is more of a test for [argbash](argbash.io) (it works really well :D )
+It is only tested on github with a few repos but works well in those cases as this tool is more of a test for [argbash](https://argbash.io) (it works really well :D )
 
 ## Usage
 
@@ -90,3 +90,20 @@ gri <github user> <github repo> <version> --no-secure
 
 
 ```
+
+## Developpement
+
+As I'm using argbash to create the parsing of arguments there's a couple of difference with a standard shell script.
+
+To edit the script edit the gri.m4 file.
+Use the makefile to build the script
+
+```bash
+make build-script
+# or build all artifact : doc, completion and script
+make build
+```
+
+### Known issue
+
+* missing ```[]``` for the if statement on line 2 after building script.
