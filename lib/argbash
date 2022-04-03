@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --rm -e PROGRAM=argbash -v "$(pwd):/work" -u "$(id -u):$(id -g)" matejak/argbash "$@"
